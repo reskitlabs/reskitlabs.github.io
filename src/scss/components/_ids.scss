@@ -1,0 +1,52 @@
+#lite {
+    font-family: momcake;
+    font-size: 5vw;
+    font-weight: 200;
+}
+
+#text {
+    font-size: 26px;
+    font-family: 'Perpetua';
+    line-height: 120%;
+    padding-right: 25px;
+    color: black;
+}
+
+#app-icon {
+    float:left; 
+    padding-left: 10vw; 
+    padding-top: 14vh;
+}
+
+
+#contact {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px;
+    background-color: #5a1010;
+    text-align: center;
+    width: 90%;
+    height: 10%;
+    font-size: 22px;
+    font-family: Georgia;
+    border-radius: 4px;
+}
+
+#contact:hover {
+    opacity: 0.7;
+}
+
+#email {
+    background-color: white;
+    width: 12vw;
+    height: 5vh;
+    border-radius: 8px;
+    color: black;
+    text-align: center;
+    font-family: Georgia;
+}
+#email:hover {
+    opacity: 0.7;
+}
+

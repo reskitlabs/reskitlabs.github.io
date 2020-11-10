@@ -1,0 +1,187 @@
+@import 'components/normalize';
+@import 'components/variables';
+@import 'components/typography';
+@import 'components/icon';
+@import 'components/button';
+@import 'components/ids.scss';
+@import 'pages/base';
+
+/* Color Declaration */
+$red: #790505;
+$beige: #f2f2e8;
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: lemon;
+    src: url('../fonts/lemon.otf')
+}
+@font-face {
+    font-family: momcake;
+    src: url('../fonts/momcake.otf')
+}
+
+article {
+    text-align: left;
+    border: solid white;
+    border-radius: 4px;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+@media (max-width:1500px) {
+    #app-icon{
+        padding-top: 5vh;
+    }
+    h1 {
+        padding-left: 10vw;
+        padding-top: 8vh;
+    }
+}
+
+@media (max-width: 1300px) {
+    h1 {
+        padding-left: 10vw;
+        padding-top: 7vh;
+    }
+}
+
+@media (max-width:1068px) {
+    h4 {
+        text-align: center;
+    }
+    img#myImage {
+        display: none;
+    }
+    img#talk {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10vw;
+    }
+    img#book {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10vw;
+    }
+    img#note {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10vw;
+    }
+    img#export {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10vw;
+    }
+}
+
+p {
+    font-family: momcake;
+    font-size: 30px;
+}
+
+.col-container {
+    display: table;
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 800px) {
+     /*For tablets:*/
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 1068px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 24px;
+    font-family: momcake;
+    font-weight: 200;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    height: 15%;
+    background-color: #D9D9D9;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+
+.footer, .push {
+    height: 100px;
+}
